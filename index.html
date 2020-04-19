@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="container">
+        <!--Header-->
         <header>
             <nav>
                 <div class="menu-icon">
@@ -27,6 +28,7 @@
                 </div>
             </nav>
         </header>
+        <!--Main content-->
         <main>
             <div class="content">
                 <article>
@@ -38,23 +40,14 @@
 
             </div>
         </main>
+
+        <!--Footer-->
+        <footer>
+
+        </footer>
     </div>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menu-icon").on("click", function(){
-                $("nav ul").toggleClass("showing");
-            });
-        });
-
-        $(window).on("scroll", function(){
-            if($(window).scrollTop()){
-                $('nav').addClass('black');
-            }else{
-                $('nav').removeClass('black');
-            }
-        });
-    </script>
+    <script src="/assets/js/script.js"></script>
     
 </body>
 </html>

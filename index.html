@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/image/logo.png">
+    <title>WikiPanganan</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <a href="#menu" class="icon-bar"> &#9776;</a>
+                </div>
+                <div class="logo">
+                    WikiPanganan
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Recipe</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="content">
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum hic numquam corporis veniam, ducimus deleniti natus consectetur sed nostrum, fuga pariatur nam cupiditate eveniet aperiam ratione explicabo. Deleniti, ea.
+                </article>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur consequuntur officia ducimus, maxime eos corrupti vitae, magnam voluptates, cum obcaecati dolor? Eligendi nobis ipsa consequuntur ipsum porro, deleniti debitis similique!
+                </article>
+
+            </div>
+        </main>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu-icon").on("click", function(){
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        $(window).on("scroll", function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }else{
+                $('nav').removeClass('black');
+            }
+        });
+    </script>
+    
+</body>
+</html>
